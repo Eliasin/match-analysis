@@ -38,6 +38,8 @@ USAGE:
 - Game Result (Winner/Loser) [GameResult]
 - Side (Red/Blue) [Side]
 - League (LCS/LFL/LCK ...) [League]
+- First Blood [FirstBlood]
+- First Tower [FirstTower]
 
 The name you should put in the constraints file is in square brackets.
 
@@ -58,9 +60,16 @@ Query for winners in LCK.
         {
             "GameResult": true
         },
-                {
+        {
             "League": "LCK"
         }
+    ]
+```
+
+For non-parameterized constraints like `FirstBlood` and `FirstTower`, put them in the constraints list directly.
+```
+    "constraints": [
+        "FirstBlood"
     ]
 ```
 
